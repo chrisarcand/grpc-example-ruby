@@ -7,8 +7,7 @@ This is a basic example of a gRPC service implemented in Ruby. The service simpl
 Before running this example, you need to install the following gems:
 
 ```bash
-gem install grpc
-gem install grpc-tools
+bundle install
 ```
 
 ## Generate Ruby Code from the Protobuf Definition
@@ -28,13 +27,13 @@ This will create two files:
 1. Start the server:
 
 ```bash
-ruby server.rb
+bundle exec ruby server.rb
 ```
 
 2. In another terminal, run the client:
 
 ```bash
-ruby client.rb "Your message here"
+bundle exec ruby client.rb "Your message here"
 ```
 
 If you don't provide a message, it will use the default message "Hello, gRPC!".
