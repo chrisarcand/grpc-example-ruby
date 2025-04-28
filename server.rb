@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
 require 'grpc'
-require_relative 'echo_services_pb'
+require_relative './proto/echo_services_pb'
 
 # Implementation of the EchoService
 class EchoServer < Echo::EchoService::Service

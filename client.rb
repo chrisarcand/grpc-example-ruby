@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
 require 'grpc'
-require_relative 'echo_services_pb'
+require_relative './proto/echo_services_pb'
 
 def main
   # Create a stub for the EchoService
